@@ -30,6 +30,6 @@
     "angular-formly": "~7.3.2",
     "angular-material": "~0.11.4",
     "ng-img-crop": "ngImgCrop#~0.3.2",
-    "webcam": "~1.0.0"
+    "webcam": "webcam-directive#~3.0.0"
   }
 }
