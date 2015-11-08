@@ -6,7 +6,7 @@
     .directive('formTable', formTable);
 
   /** @ngInject */
-  function formTable(Upload, $filter) {
+  function formTable($filter) {
     var directive = {
       restrict: 'E',
       templateUrl: 'formTable/formTable.html',
@@ -29,8 +29,7 @@
 
       }
     };
-    formTable.$inject = ['Upload', '$filter']
     return directive;
   }
-
+  formTable.$inject = ['$filter'];
 })();

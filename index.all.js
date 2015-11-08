@@ -5,7 +5,6 @@
     .module('formlyMaterialTemplate', [
       'ngMaterial',
       'formly',
-      'ngFileUpload',
       'ngImgCrop',
       'webcam'
     ])
@@ -93,7 +92,7 @@
     .directive('imgSelect', imgSelect);
 
   /** @ngInject */
-  function imgSelect(Upload, $filter) {
+  function imgSelect($filter) {
     var directive = {
       restrict: 'E',
       templateUrl: 'imgSelect/imgSelect.html',
@@ -163,7 +162,7 @@
     };
     return directive;
   }
-  imgSelect.$inject = ['Upload', '$filter'];
+  imgSelect.$inject = ['$filter'];
 })();
 (function() {
   'use strict';
@@ -173,7 +172,7 @@
     .directive('formTable', formTable);
 
   /** @ngInject */
-  function formTable(Upload, $filter) {
+  function formTable($filter) {
     var directive = {
       restrict: 'E',
       templateUrl: 'formTable/formTable.html',
@@ -196,8 +195,7 @@
 
       }
     };
-    formTable.$inject = ['Upload', '$filter']
     return directive;
   }
-
+  formTable.$inject = ['$filter'];
 })();

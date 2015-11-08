@@ -5,7 +5,6 @@
     .module('formlyMaterialTemplate', [
       'ngMaterial',
       'formly',
-      'ngFileUpload',
       'ngImgCrop',
       'webcam'
     ])
