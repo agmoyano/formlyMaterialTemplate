@@ -1,0 +1,33 @@
+{
+  "name": "formlyMaterialTemplate",
+  "main": [
+    "index.all.js",
+    "index.css"
+  ],
+  "authors": [
+    "Agustin Moyano <agustin.moyano@gmail.com>"
+  ],
+  "description": "Material Template for Angular Formly",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "formly",
+    "angular",
+    "material",
+    "template"
+  ],
+  "license": "GPL",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-formly": "~7.3.2",
+    "angular-material": "~0.11.4"
+  }
+}

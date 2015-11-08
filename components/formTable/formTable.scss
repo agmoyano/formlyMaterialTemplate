@@ -1,0 +1,28 @@
+form-table {
+  md-toolbar.label {
+    border-radius: 3px 3px 0px 0px;
+    height: 48px;
+    min-height: 48px
+  }
+
+  .no-data {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .actionSpace {
+    width: 60px;
+  }
+
+  .remove {
+    visibility: hidden;
+  }
+
+  .remove.visible {
+    visibility: visible;
+  }
+
+  > div > md-content {
+    border: 1px solid rgba(0,0,0,0.12)
+  }
+}
