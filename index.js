@@ -6,6 +6,7 @@
       'ngMaterial',
       'formly',
       'ngImgCrop',
+      'ngFileUpload',
       'webcam'
     ])
     .run(runBlock);
