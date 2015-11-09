@@ -82,5 +82,5 @@
     });
   }
 
-  runBlock.$inject = ['$log', 'formlyConfig'];
+  runBlock.$inject = ['$log', 'formlyConfig', '$templateCache'];
 })();
