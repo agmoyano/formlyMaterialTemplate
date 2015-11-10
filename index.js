@@ -45,8 +45,15 @@
       name: 'select',
       template: '<md-select ng-model="model[options.key]" placeholder="{{options.templateOptions.label}}">'+
                   //'<span ng-if="options.templateOptions.label">{{options.templateOptions.label}}</span>'+
-                  '<md-option ng-if="options.templateOptions.options instanceof Array" ng-repeat="option in options.templateOptions.options" ng-value="option.key||option.value||option">{{option.value||option}}</md-option>'+
-                  '<md-option ng-if="!(options.templateOptions.options instanceof Array)" ng-repeat="(key,value) in options.templateOptions.options" ng-value="value">{{key}}</md-option>'+
+                  '<md-option ng-repeat="option in options.templateOptions.options" ng-value="option.key||option.value||option">{{option.value||option}}</md-option>'+
+                  '</md-select>'
+    });
+
+    formlyConfig.setType({
+      name: 'selectObj',
+      template: '<md-select ng-model="model[options.key]" placeholder="{{options.templateOptions.label}}">'+
+                  //'<span ng-if="options.templateOptions.label">{{options.templateOptions.label}}</span>'+
+                  '<md-option ng-repeat="(key,value) in options.templateOptions.options" ng-value="value">{{key}}</md-option>'+
                   '</md-select>'
     });
 
@@ -63,13 +70,13 @@
 
     formlyConfig.setWrapper({
       name: 'mdSelectLabel',
-      types: ['select', 'selectcb'],
+      types: ['select', 'selectObj'],
       template: '<label>{{to.label}}</label><md-tooltip>{{to.label}}</md-tooltip><formly-transclude></formly-transclude>'
     });
 
     formlyConfig.setWrapper({
       name: 'mdInputContainer',
-      types: ['input', 'textarea', 'select', 'selectcb'],
+      types: ['input', 'textarea', 'select', 'selectObj'],
       template: '<md-input-container><formly-transclude></formly-transclude></md-input-container>'
     });
 
