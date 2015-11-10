@@ -1,24 +1,24 @@
 <div ng-show="state=='crop'" layout="column">
   <div layout="row" layout-align="end center" class="fabToolbar">
-    <md-button class="md-fab md-mini" ngf-select ng-model="selected">
+    <md-button type="button" class="md-fab md-mini" ngf-select ng-model="selected">
       <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
         Subir Imagen
       </md-tooltip>
       <md-icon md-font-set="material-icons">file_upload</md-icon>
     </md-button>
-    <md-button class="md-fab md-mini" ng-click="state='snapshot'">
+    <md-button type="button" class="md-fab md-mini" ng-click="state='snapshot'">
       <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
         Sacar Foto
       </md-tooltip>
       <md-icon md-font-set="material-icons">camera</md-icon>
     </md-button>
-    <md-button class="md-fab md-mini" ng-click="save()">
+    <md-button type="button" class="md-fab md-mini" ng-click="save()">
       <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
         Aceptar
       </md-tooltip>
       <md-icon md-font-set="material-icons">done</md-icon>
     </md-button>
-    <md-button class="md-fab md-mini" ng-click="cancel()">
+    <md-button type="button" class="md-fab md-mini" ng-click="cancel()">
       <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
         Cancelar
       </md-tooltip>
@@ -31,13 +31,13 @@
 </div>
 <div ng-show="state=='snapshot'" layout="column">
   <div layout="row" layout-align="end center" class="fabToolbar">
-    <md-button class="md-fab md-mini" ngf-select ng-model="selected">
+    <md-button type="button" class="md-fab md-mini" ngf-select ng-model="selected">
       <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
         Subir Imagen
       </md-tooltip>
       <md-icon md-font-set="material-icons">file_upload</md-icon>
     </md-button>
-    <md-button class="md-fab md-mini" ng-click="cancel()">
+    <md-button type="button" class="md-fab md-mini" ng-click="cancel()">
       <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
         Cancelar
       </md-tooltip>
@@ -56,13 +56,13 @@
         </md-button>
       </md-fab-trigger>
       <md-fab-actions>-->
-        <md-button class="md-fab md-mini" ngf-select ng-model="selected">
+        <md-button type="button" class="md-fab md-mini" ngf-select ng-model="selected">
           <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
             Subir Imagen
           </md-tooltip>
           <md-icon md-font-set="material-icons">file_upload</md-icon>
         </md-button>
-        <md-button class="md-fab md-mini" ng-click="state='snapshot'">
+        <md-button type="button" class="md-fab md-mini" ng-click="state='snapshot'">
           <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">
             Sacar Foto
           </md-tooltip>
