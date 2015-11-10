@@ -53,7 +53,7 @@
       name: 'selectObj',
       template: '<md-select ng-model="model[options.key]" placeholder="{{options.templateOptions.label}}">'+
                   //'<span ng-if="options.templateOptions.label">{{options.templateOptions.label}}</span>'+
-                  '<md-option ng-repeat="(key,value) in options.templateOptions.options" ng-value="value">{{key}}</md-option>'+
+                  '<md-option ng-repeat="(key,value) in options.templateOptions.options" ng-value="key">{{value}}</md-option>'+
                   '</md-select>'
     });
 
