@@ -32,6 +32,21 @@
     });
 
     formlyConfig.setType({
+      name: 'button',
+      template: '<md-button>'+
+                /*'<md-icon ng-if="options.templateOptions.icon" '+
+                  'ng-attr-md-svg-src="{{options.templateOptions.icon.svgSrc}}"'+
+                  'ng-attr-md-svg-icon="{{options.templateOptions.icon.svgIcon}}"'+
+                  'ng-attr-md-font-icon="{{options.templateOptions.icon.fontIcon}}"'+
+                  'ng-attr-md-font-set="{{options.templateOptions.icon.fontSet}}"'+
+                  'ng-attr-class="{{options.templateOptions.icon.class}}">'+
+                  '{{options.templateOptions.icon.name}}'+
+                '</md-icon>'+*/ //could not make icons to work inside button
+                '{{options.templateOptions.label}}'+
+                '</md-button>'
+    });
+
+    formlyConfig.setType({
       name: 'input',
       template: '<input ng-model="model[options.key]">'
     });
